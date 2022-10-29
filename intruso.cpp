@@ -34,6 +34,7 @@ string Intruso::crack_senha(){                  // 12*(i-1) + i + j == 12*i + 1 
     int nume_entradas, i, j;                    // 12*(i-1) + j == 12*i + i + j    2 == 15              3   15
                                                 // 12*(i-1) + i + j == 12*i + j    3 == 14
     std::string senha_correta;
+    //achando um erro nessa função
     nume_entradas =  (possi_senha.size())/12;
     for(i=1; i<nume_entradas; i++){
        for(j=0; j< 12; j+2){
