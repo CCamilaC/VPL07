@@ -50,7 +50,7 @@ string Intruso::crack_senha(){                  // 12*(i-1) + i + j == 12*i + 1 
                 senha_correta=senha_correta + possi_senha[12*i + j];
             }
             
+        return senha_correta;
        }
     }
-    return senha_correta;
 }
