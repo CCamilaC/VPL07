@@ -92,7 +92,6 @@ string Intruso::crack_senha(){                  // 12*(i-1) + i + j == 12*i + 1 
         cout<<posMaior<< " ";
         senha_correta=senha_correta + (char)posMaior;
     }
-    cout<<" local da suposta senha:"<<senha_correta<<"apareceu algo?"<<endl;
     for(i=0; i<6; i++){
         for(j=0; j<10; j++){
             cout<<contador[i][j]<<" ";
