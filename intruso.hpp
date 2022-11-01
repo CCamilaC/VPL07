@@ -2,6 +2,7 @@
 #include <string>
 #include <map>
 #include <vector>
+#define TAM 25
 
 class Intruso{
     /*Continue a implementação da classe Intruso*/
@@ -13,7 +14,10 @@ class Intruso{
         std::string letraC;
         std::string letraD;
         std::string letraE;
-        std::string possi_senha;
+        std::string possi_senha[TAM];
+        //std::string posicao_senha[TAM];
+    
+
         int contador=0;
 
     public:
