@@ -2,9 +2,12 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 void Intruso::set_senha_vazada(string vazou){ //1 7 3 9 0 8 5 6 2 4 B C E A E B 
+    
+    vazou.erase(std::remove(vazou.begin(), vazou.end(), ' '), vazou.end());
                                               //9 0 7 5 8 4 6 2 3 1 E C C B D A
     letraA= letraA + vazou[0] + vazou[1]; // 1 7 9 0 // 0 1 2 3
     letraB= letraB + vazou[2] + vazou[3];
@@ -90,7 +93,7 @@ string Intruso::crack_senha(){                  // 12*(i-1) + i + j == 12*i + 1 
             }
         }
         //cout<<posMaior<< " ";
-        senha_correta=senha_correta + (char)posMaior;
+        senha_correta=senha_correta + (char)posMaior + " ";
     }
     return senha_correta;
 }
